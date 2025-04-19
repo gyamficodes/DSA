@@ -47,4 +47,29 @@ searchForItem('flour')
 const  numbers =  [1,2,3,4,5,6,7,8,9]
 
 const findNumner = (arr, index) => arr[index]
- console.log( findNumner(numbers, 2))
+ console.log( findNumner(numbers, 2)) 
+
+ const Items = ['Cassava', 'laptop', 'Phone', 'Chair']
+ const  Finditems = (arr, ele) => arr[ele]
+console.log(Finditems(Items, 0))
+
+
+//o(n⋀2)
+//indicates that the algorithnm  execution increase quadratically with the size of the input data  (represent by n) ;
+const List = [1,2,3,4,]
+function  findPairs(arr){
+    for(let i = 0; i < arr.length; i++){
+        for(let j = 0 ; j < arr.length; j++){
+            console.log(`${arr[i]} ${arr[j]}`)
+        }
+    }
+
+    //o(n)
+    for(let q = 0 ; q < arr.length; q++){
+        console.log(`----- ${q}`)
+    }
+}
+
+findPairs(numbers);
+
+// if we combine all the  "o"  perations  it becomes o(n⋀2 + n)
