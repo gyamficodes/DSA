@@ -73,3 +73,15 @@ function  findPairs(arr){
 findPairs(numbers);
 
 // if we combine all the  "o"  perations  it becomes o(n⋀2 + n)
+
+
+
+//O(log)
+//In simpler for when the agorithem input data increase , the time it takes to run too increase slowly
+// 0(log2 8) = ?
+// 2*2*2 = 8;
+// therefore 0(log2 8) = 3
+
+
+
+
