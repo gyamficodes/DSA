@@ -84,4 +84,19 @@ findPairs(numbers);
 
 
 
+//Arrays  DS
+//Data structure of an array is an orderd collection of elements that can be access using the index
 
+
+
+const username = ['Adwoa', 'Afia', 'Mensah']
+
+const findUserName = (allName, User) => {
+    for(u = 0; allName.length; u++){
+        if(allName[u] === User){
+            console.log(`Person is ${User}`)
+        }
+    }
+}
+
+findUserName(username, 'Afia');
