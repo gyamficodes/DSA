@@ -42,6 +42,20 @@ const searchForItem = (item) => {
 
 searchForItem('flour')
 
+
+const username = ['Adwoa', 'Afia', 'Mensah']
+
+const findUserName = (allName, User) => {
+    for(u = 0; allName.length; u++){
+        if(allName[u] === User){
+            console.log(`Person is ${User}`)
+        }
+    }
+}
+
+findUserName(username, 'Afia');
+
+
 //o(1)
 // aka constant time , signifies that  the execution time of algorithnm remains constant regardless of the input size.
 const  numbers =  [1,2,3,4,5,6,7,8,9]
@@ -87,16 +101,14 @@ findPairs(numbers);
 //Arrays  DS
 //Data structure of an array is an orderd collection of elements that can be access using the index
 
-
-
-const username = ['Adwoa', 'Afia', 'Mensah']
-
-const findUserName = (allName, User) => {
-    for(u = 0; allName.length; u++){
-        if(allName[u] === User){
-            console.log(`Person is ${User}`)
-        }
+class MyBox {
+    constructor(){
+        this.length = 0
+    this.items = {}
     }
 }
 
-findUserName(username, 'Afia');
+
+const ListBox = new MyBox();
+
+console.log('My new data',ListBox)
