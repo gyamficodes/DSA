@@ -109,6 +109,8 @@ class MyBox {
 }
 
 
-const ListBox = new MyBox();
 
+const ListBox = new MyBox();
 console.log('My new data',ListBox)
+
+
