@@ -1,7 +1,5 @@
-
 //Data Structure
 const StudentDatabase = ['Yaw', 'Kwame', 'Ama', 'John', 'Kofi']
-
 
 //Agorithem for finding a specific user.
 const foundStuden = (allStudent, studentName) => {
@@ -42,7 +40,6 @@ const searchForItem = (item) => {
 
 searchForItem('flour')
 
-
 const username = ['Adwoa', 'Afia', 'Mensah']
 
 const findUserName = (allName, User) => {
@@ -55,18 +52,16 @@ const findUserName = (allName, User) => {
 
 findUserName(username, 'Afia');
 
-
 //o(1)
 // aka constant time , signifies that  the execution time of algorithnm remains constant regardless of the input size.
 const  numbers =  [1,2,3,4,5,6,7,8,9]
 
 const findNumner = (arr, index) => arr[index]
- console.log( findNumner(numbers, 2)) 
+ console.log( findNumner(numbers, 2))
 
  const Items = ['Cassava', 'laptop', 'Phone', 'Chair']
  const  Finditems = (arr, ele) => arr[ele]
 console.log(Finditems(Items, 0))
-
 
 //o(n⋀2)
 //indicates that the algorithnm  execution increase quadratically with the size of the input data  (represent by n) ;
@@ -86,31 +81,44 @@ function  findPairs(arr){
 
 findPairs(numbers);
 
-// if we combine all the  "o"  perations  it becomes o(n⋀2 + n)
+if we combine all the  "o"  perations  it becomes o(n⋀2 + n)
 
-
-
-//O(log)
-//In simpler for when the agorithem input data increase , the time it takes to run too increase slowly
-// 0(log2 8) = ?
-// 2*2*2 = 8;
-// therefore 0(log2 8) = 3
-
-
+O(log)
+In simpler for when the agorithem input data increase , the time it takes to run too increase slowly
+0(log2 8) = ?
+2*2*2 = 8;
+therefore 0(log2 8) = 3
 
 //Arrays  DS
 //Data structure of an array is an orderd collection of elements that can be access using the index
 
-class MyBox {
-    constructor(){
-        this.length = 0
-    this.items = {}
-    }
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+let arrayB = [true, false];
+let arrayC = ["Adwoa", "Afia", "Mensah"];
+
+class myArray {
+  constructor() {
+    this.length = 0;
+    this.data = {};
+  }
+
+  push(item) {
+    this.data[this.length] = item;
+    this.length++;
+    return this.length;
+  }
+
+  getPerson(index) {
+    return this.data[index];
+  }
+
+ 
 }
 
-
-
-const ListBox = new MyBox();
-console.log('My new data',ListBox)
-
-
+const myNewArray = new myArray();
+myNewArray.push("Adwoa");
+myNewArray.push("Afia");
+myNewArray.push("Mensah");
+myNewArray.pop();
+console.log(myNewArray.getPerson(0));
+console.log(myNewArray);
