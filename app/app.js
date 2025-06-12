@@ -81,18 +81,18 @@ function  findPairs(arr){
 
 findPairs(numbers);
 
-if we combine all the  "o"  perations  it becomes o(n⋀2 + n)
+// if we combine all the  "o"  perations  it becomes o(n⋀2 + n)
 
-O(log)
-In simpler for when the agorithem input data increase , the time it takes to run too increase slowly
-0(log2 8) = ?
-2*2*2 = 8;
-therefore 0(log2 8) = 3
+// O(log)
+// In simpler for when the agorithem input data increase , the time it takes to run too increase slowly
+// 0(log2 8) = ?
+// 2*2*2 = 8;
+// therefore 0(log2 8) = 3
 
 //Arrays  DS
 //Data structure of an array is an orderd collection of elements that can be access using the index
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+const numbering = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 let arrayB = [true, false];
 let arrayC = ["Adwoa", "Afia", "Mensah"];
 
