@@ -119,16 +119,15 @@ class myArray {
     return lastItem;
   }
 
-
-shift(){
+  shift() {
     const item = this.data[0];
-      for(let i = 0 ; i < this.data.lenght; i++){
-       this.data[i] = this.data[i + i];
-      }
+    for (let i = 0; i < this.data.lenght; i++) {
+      this.data[i] = this.data[i + i];
+    }
     delete this.data[this.length - 1];
     this.length--;
     return item;
-}
+  }
 
   delete(index) {
     this.data[this.length] = index;
@@ -142,17 +141,47 @@ myNewArray.push("Adwoa");
 myNewArray.push("Afia");
 myNewArray.push("Mensah");
 myNewArray.pop();
-console.log('delete',myNewArray.delete(0));
+console.log("delete", myNewArray.delete(0));
 console.log(myNewArray.getPerson(0));
 console.log(myNewArray.shift());
 console.log(myNewArray);
 
-
-
-
 ///revers string
-const  content = 'Hello World';
-const   fruit = "Apple";
+const content = "Hello World";
+
+const reverseString = (str) => str.split('').reverse().join("");
+console.log(reverseString(content))
 
 
-console.log(content.split('').reverse().join(''));
+//Pallindrones means if the the reverse string is equal to the original one then that 
+// word is pallindrones
+const setPallindronesString = "cddc"
+console.log(reverseString(setPallindronesString));
+
+
+//int reversal
+
+
+
+
+//linear search
+const MyAge = [10, 20, 30, 40, 50];
+const searcIndex = MyAge.indexOf(30);
+console.log(searcIndex);
+
+
+const searchMyAge = (arr, age) => {
+  for (let i = 0; i < arr.length; i++) {
+    if(arr[i] === age){
+      console.log('Age', `${age}`)
+    }
+  }
+  return -1
+};
+
+searchMyAge(MyAge, 10)
+
+
+
+
+
