@@ -160,8 +160,19 @@ console.log(reverseString(setPallindronesString));
 
 
 //int reversal
+const itemNumber = 221;
+const convertNumberToString = (num) =>  {
+ const reverse = num.toString().split('').reverse().join('')
+  return parseInt(reverse) * Math.sign(num);
+};
+console.log(convertNumberToString(itemNumber));
 
 
+//sentence capitalize 
+const  sentence = "Hello World";
+sentence.toLocaleUpperCase
+const sentenceCaps = (snt) => snt.toLowerCase().join('').toLocaleUpperCase().split()
+console.log(sentenceCaps(sentence));
 
 
 //linear search
