@@ -149,48 +149,100 @@ console.log(myNewArray);
 ///revers string
 const content = "Hello World";
 
-const reverseString = (str) => str.split('').reverse().join("");
-console.log(reverseString(content))
+const reverseString = (str) => str.split("").reverse().join("");
+console.log(reverseString(content));
 
-
-//Pallindrones means if the the reverse string is equal to the original one then that 
+//Pallindrones means if the the reverse string is equal to the original one then that
 // word is pallindrones
-const setPallindronesString = "cddc"
+const setPallindronesString = "cddc";
 console.log(reverseString(setPallindronesString));
-
 
 //int reversal
 const itemNumber = 221;
-const convertNumberToString = (num) =>  {
- const reverse = num.toString().split('').reverse().join('')
+const convertNumberToString = (num) => {
+  const reverse = num.toString().split("").reverse().join("");
   return parseInt(reverse) * Math.sign(num);
 };
 console.log(convertNumberToString(itemNumber));
 
-
-//sentence capitalize 
-const  sentence = "Hello World";
-sentence.toLocaleUpperCase
-const sentenceCaps = (snt) => snt.toLowerCase().join('').toLocaleUpperCase().split()
-console.log(sentenceCaps(sentence));
-
+//sentence capitalize
+const sentence = "Hello World";
+sentence.toLocaleUpperCase;
+const sentenceCaps = (snt) => {
+  return snt
+    .toLowerCase()
+    .split(" ")
+    .map((words) => words[0].toUpperCase() + words.slice(1))
+    .join(" ");
+};
+console.log("sentence capitalize ", sentenceCaps(sentence));
 
 //linear search
 const MyAge = [10, 20, 30, 40, 50];
 const searcIndex = MyAge.indexOf(30);
 console.log(searcIndex);
 
-
 const searchMyAge = (arr, age) => {
   for (let i = 0; i < arr.length; i++) {
-    if(arr[i] === age){
-      console.log('Age', `${age}`)
+    if (arr[i] === age) {
+      console.log("Age", `${age}`);
     }
   }
-  return -1
+  return -1;
 };
 
-searchMyAge(MyAge, 10)
+searchMyAge(MyAge, 10);
+
+//FizzBuzz
+const handdleFizzBuzz = (n) => {
+  for (let i = 0; i < n; i++) {
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("FizzBuzz");
+    } else if (i % 3 === 0) {
+      console.log("Fizz");
+    } else if (i % 5 === 0) {
+      console.log("Buzz");
+    } else {
+      console.log(i);
+    }
+  }
+};
+
+handdleFizzBuzz(15);
+
+// chunck array
+
+const chunkArray = (arr, size) => {
+  const chunck = [];
+  let index = 0;
+
+  while (index < arr.length) {
+    const chunckData = arr.slice(index, index + size);
+    console.log(chunckData);
+    chunck.push(chunckData);
+    index += size;
+  }
+  return chunck;
+};
+
+console.log(chunkArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5));
+
+//Two sum
+
+const twoSum = (num, target) => {
+  for (let i = 0; i < num.length; i++) {
+    for (let j = i + 1; j < num.length; j++) {
+      if (num[i] + num[j] === target) {
+        return [i, j];
+      }
+    }
+  }
+
+  return [];
+};
+
+const results = twoSum([1, 2, 3, 4, 5, 6, 7, 8, 9], 9);
+console.log(results);
 
 
 
