@@ -12,10 +12,12 @@
 
 //Agorithem to sum(A, B)
 
+
 const sumAge = (a, n) => {
     let s = 0;
-    for(let i = 0; i< n; i++){
+    for(let i = 0; i < n; i++){
         s = s + a[i]
         return s;
     }
 } 
+
