@@ -49,5 +49,11 @@ let a = 0; // 1
 
 
 
+// big ooh notation
+// Big Ooh Notation is used to describe the performance or complexity of an algorithm.
+
+
+
+
 
 
